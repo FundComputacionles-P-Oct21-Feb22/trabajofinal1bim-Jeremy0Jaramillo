@@ -1,0 +1,20 @@
+//Miniespecificación
+1.Inicio
+
+2.proceso <-- 0
+3.par <-- 0
+
+4.numero <-- int(input("Ingrese un número par: "))
+5.Si (numero < 2) entonces
+    6.>> ("El número ingresado es menor a 2")
+7.Caso Contrario
+    8.Mientras (par < numero) entonces
+        9.par = par + 2
+        10.proceso = proceso + par
+    11.Fin Mientras
+12.Fin Si
+
+13.>> ("La suma de números pares hasta el valor que ingreso da igual a:")
+14.>> (proceso)
+
+15.Fin

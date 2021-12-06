@@ -1,0 +1,22 @@
+//Miniespecificación
+1.Inicio
+
+2.cadena <-- ""
+3.bandera <-- True
+
+4.Mientras (bandera) entonces
+    5.metro <-- int(input("Ingrese el metro a calcular: "))
+    6.pies = metro * 3.28084
+    7.yardas = metro * 1.09361
+    8.pulgadas = metro * 39.370
+    9.cadena = "%s     %s     %s     %s     %s\n" % (cadena, metro, yardas, pulgadas, pies)
+    10.palabra = input("Ingrese si para salir: ")
+    11.Si (palabra = "si") entonces
+        12.bandera = False
+    13.Fin Si
+14.Fin Mientras
+
+15.>> ("Metros     Yardas     Pulgadas     Pies")
+16.>> (cadena)
+
+17.Fin

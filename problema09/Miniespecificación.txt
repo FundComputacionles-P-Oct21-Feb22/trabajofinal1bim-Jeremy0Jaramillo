@@ -1,0 +1,32 @@
+//Miniespecificación
+1.Inicio
+
+2.bandera <-- True
+3.cadena <-- ""
+4.contador <-- 0
+
+5.Mientras (bandera) entonces 
+    6.numero <-- int(input("Ingrese un número para la serie (8 números): "))
+    7.contador = contador + 1
+    8.Si (contador % 2 = 0) entonces
+        9.signo = "+"
+    10.Fin Si
+
+    11.Caso Contrario
+        12.signo = "-"
+    13.Fin si
+
+    14.Si (contador = 8) entonces
+        15.signo = ""
+    16.Fin Si
+
+    17.cadena = "%s  %s  %s" % (cadena, numero, signo)
+    
+    18.Si (contador = 8) entonces
+        19.bandera = False
+    20.Fin Si
+
+21.Fin Mientras
+22.print("S1 =" + cadena)
+
+23.Fin

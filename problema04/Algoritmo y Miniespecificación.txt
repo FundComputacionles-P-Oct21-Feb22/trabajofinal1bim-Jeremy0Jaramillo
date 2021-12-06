@@ -1,0 +1,43 @@
+//Algoritmo
+1.Inicio
+
+2.Preguntar por el primer número
+3.Preguntar por el segundo número
+4.Preguntar por el tercer número
+
+5.Comparar si uno de los números ingresados as igual a cualquier otro
+6.Si es así presentar un mensaje de error y terminar el programa
+
+7.Caso contrario se compara si el primer número es mayor al segundo y el tercero
+8.Si se cumple presentar un mensaje que contenga el primer número
+
+9.Caso contrario se compara si el segundo número es mayor al primero y el tercero
+8.Si se cumple presentar un mensaje que contenga el segundo número
+
+9.Caso contrario se compara si el tercer número es mayor al primero y el segundo
+10.Si se cumple presentar un mensaje que contenga el tercer número
+
+11.Fin
+
+//Miniespecificación
+
+1.Inicio
+
+2.numero1 <-- int(input("Ingrese un número (hasta 3 números): "))
+3.numero2 <-- int(input("Ingrese un número (hasta 3 números): "))
+4.numero3 <-- int(input("Ingrese un número (hasta 3 números): "))
+
+5.Si (numero1 = numero2) OR (numero2 == numero3) OR (numero1 = numero3) entonces
+    6.>>("ERROR. (Los números ingresados no deben ser iguales unos a otros")
+7.Caso Contrario
+    8.Si (numero1 > numero2) AND (numero1 > numero3) entonces
+        9.>> (numero1)
+    10.Caso Contrario
+        11.Si (numero2 > numero1) AND (numero2 AND numero3) entonces
+            12.>> (numero2)
+        13.Caso Contrario
+            14.Si (numero3 > numero1) AND (numero3 > numero2) entonces
+                15.>> (numero3)
+	    16.Fin Si
+
+17.Fin

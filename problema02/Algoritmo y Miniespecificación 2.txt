@@ -1,0 +1,47 @@
+//Algoritmo
+1.Inicio
+
+2.Preguntar el precio del traje a comprar
+3.preguntar la cantidad de trajes a comprar
+4.calcular el subtotal (precio * cantidad)
+6.Si la cantidad es igual a 1, aplicar el 20% de descuento
+7.Si la cantidad es igual a 2, aplicar el 25% de descuento
+8.Si la cantidad es igual a 3, aplicar el 40% de descuento
+9.Si la cantidad es mayor a 3, aplicar el 50% de descuento
+10.Imprimir en pantalla el subtotal, el descuento y el total.
+
+11.Fin
+
+//Miniespecificación
+1.Inicio
+
+2.precio <-- float(input("Ingrese el precio del traje: "))
+3.cantidad <-- int(input("Ingrese el número de trajes a comprar: "))
+4.descuento <-- 0
+5.subtotal <-- precio * cantidad
+6.total <-- 0
+
+7.Si (cantidad == 1) entonces
+    8.porcentaje = 20
+    9.descuento = (subtotal * porcentaje)/100
+    10.total = subtotal - descuento
+11.Caso Contrario
+    12.Si(cantidad ==2) entonces
+        13.porcentaje = 25
+        14.descuento = (subtotal * porcentaje) / 100
+        15.total = subtotal - descuento
+    16.Caso Contrario
+        17.Si(cantidad == 3) entonces
+            18.porcentaje = 40
+            19.descuento = (subtotal * porcentaje) / 100
+            20.total = subtotal - descuento
+        21.Caso Contrario
+            22.Si(cantidad > 3) entonces
+                23.porcentaje = 50
+                24.descuento = (subtotal * porcentaje) / 100
+                25.total = subtotal - descuento
+	    26.Fin si
+
+27.>>("Subtotal: $", subtotal, "\nDescuento: $", descuento, "\nTotal: $", total)
+
+28.Fin

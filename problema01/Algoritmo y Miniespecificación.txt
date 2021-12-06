@@ -1,0 +1,31 @@
+//Algoritmo
+1.Inicio
+2.Preguntar por el primer ángulo
+3.Preguntar por el segundo ángulo
+4.Preguntar por el tercer ángulo
+5.Comparar que los ni uno de los tres ángulos ingresados sean iguales
+6.Si uno es igual a otro entonces mostrar un mensaje de error y terminar el programa
+7.Si no se cumple el punto anterior entonces se comparan los tres angulos al requerimiento de cada triangulo
+8.Si uno de los angulos es de 90° entonces se imprime que pertenecen a un triángulo rectángulo
+9.Si un angulo mide mas de 90° y menos de 180° entonces imprime que pertenecen a un triángulo obtusángulo
+10.Si los tres angulos son menores a 90° entonces imprime que pertenecen a un triángulo acutángulo
+11.Fin
+
+//Miniespecificación
+
+1.Inicio
+
+2.angulo1 <-- float(input("Ingrese el grado(primer valor): "))
+3.angulo2 <-- float(input("Ingrese el grado(segundo valor): "))
+4.angulo3 <-- float(input("Ingrese el grado(tercer valor): "))
+
+5.Si (angulo1 = 90) OR (angulo2 = 90) OR (angulo3 = 90)
+6.>> ("Los grados ingresados pertenecen a un Triángulo Rectángulo")
+7.Caso Contrario
+	8.Si ((angulo1 > 90) AND (angulo1 < 180)) OR ((angulo2 > 90) AND (angulo2 < 180)) OR ((angulo3 > 90) AND (angulo3 < 180))
+        	9.>>("Los grados ingresados pertenecen a un Triángulo Obtusángulo")
+	10.Caso Contrario
+		11.Si(angulo1 < 90) AND (angulo2 < 90) OR (angulo3 < 90)
+            		12.>>("Los grados ingresados pertenecen a un Triángulo Acutángulo")
+		12.Fin Si
+13.Fin

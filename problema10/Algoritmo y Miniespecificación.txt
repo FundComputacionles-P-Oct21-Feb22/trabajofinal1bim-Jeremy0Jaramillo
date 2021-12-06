@@ -1,0 +1,43 @@
+//Algoritmo
+1.Inicio
+
+2.Hacer un ciclo repetitivo en el que:
+3.Se pregunte un número
+4.Realizar el proceso para sacar la media de la cantidad de números actualmente ingresados
+5.Realizar el proceso para sacar la varianza aprovechando la media como promedio que se necesita en este proceso
+6.Pedir que se ingrese "si" para terminar el programa
+
+7.Presentar el resultado de la media y la varianza en pantalla
+
+8.Fin
+
+//Miniespecificación
+1.Inicio
+
+2.bandera = True
+3.contador = 0
+4.acumulador = 0
+5.cadena <-- ""
+6.numeros <-- ""
+7.media <-- 0
+8.varianza <-- 0
+9.numerador <-- 0
+
+10.Mientras (bandera) entonces
+    11.numero <-- int(input("Ingrese un número: "))
+    12.numeros <-- "%s %s," % (numeros, numero)
+    13.contador = contador + 1
+    14.acumulador = acumulador + numero
+    15.media = acumulador / contador
+    16.numerador = numerador + (numero - media)
+    17.varianza = numerador / contador
+    18.salir <-- input("Si desea salir, ingrese si: ")
+    19.Si salir = "si" entonces
+        20.bandera = False
+    21.Fin Si
+22.Fin Mientras
+
+21.cadena = "%sLos números%s tienen media de %s y una varianza de %d\n" % (cadena, numeros, media, varianza)
+22.>> (cadena)
+
+23.Fin

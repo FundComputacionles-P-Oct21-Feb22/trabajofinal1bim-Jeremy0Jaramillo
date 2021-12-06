@@ -1,0 +1,37 @@
+//Algoritmo
+1.Inicio
+
+2.Pedir que se ingrese el valor de X
+3.Pedir que se ingrese el valor de Y
+
+4.Dependiendo del signo de cada valor ingresado se los compara para saber en que cuadrante pertenecen
+
+5.Si el signo del valor de X es positivo y el de Y es positivo encontes se presenta que pertenece al 1° cuadrante
+6.Si el signo del valor de X es negativo y el de Y es positivo entonces se presenta que pertenece al 2° cuadrante
+7.Si el signo del valor de X es negativo y el de Y es negativo entonces se presenta que pertenece al 3° cuadrante
+8.Si el signo del valor de X es negativo y el de Y es negativo entonces se presenta que pertenece al 4° cuadrante
+
+9.Fin
+
+//Miniespecificación
+
+1.Inicio
+
+1.numero1 <-- input("Ingrese la coordenada en X (especifique valor positivo con +): ")
+2.numero2 <-- input("Ingrese la coordenada en Y (especifique valor positivo con +): ")
+3.coordenada <-- "(%s;%s)" % (numero1, numero2)
+
+4.Si (numero1[0] = "+") AND (numero2[0] = "+") entonces
+    5.>> ("Las coordenadas", coordenada, "pertenecen al 1° cuadrante")
+6.Caso Contrario
+    7.Si (numero1[0] = "-") AND (numero2[0] = "+") entonces
+        8.>> ("Las coordenadas", coordenada, "pertenecen al 2° cuadrante")
+    9.Caso Contrario
+        10.Si (numero1[0] = "-") AND (numero2[0] = "-") entonces
+            11.>> ("Las coordenadas", coordenada, "pertenecen al 3° cuadrante")
+        12.Caso Contrario
+            13.Si (numero1[0] = "+") AND (numero2[0] = "-") entonces
+                14.print("Las coordenadas", coordenada, "pertenecen al 4° cuadrante")
+	    15.Fin Si
+
+16.Fin
